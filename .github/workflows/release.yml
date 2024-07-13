@@ -34,6 +34,7 @@ jobs:
       with:
         file: poja-version.yml
         version: version
+        
     - name: Conventional changelog
       id: conventional-ch
       uses: TriPSs/conventional-changelog-action@v4.1.1
@@ -46,12 +47,14 @@ jobs:
         skip-on-empty: 'true'
         skip-version-file: 'false'
         skip-commit: 'false'
+    
     - name: Read new version file
       id: read-new-version
       uses: CumulusDS/get-yaml-paths-action@v1.0.1
       with:
         file: poja-version.yml
         version: version
+
     - name: Put correct version into GITHUB_ENV and into poja-version.yml
       run: |
         if ${{ steps.conventional-ch.outputs.skipped == 'false' }}; then
@@ -73,6 +76,6 @@ jobs:
       if: ${{ steps.conventional-ch.outputs.skipped == 'false' }}
       run: |
         pip install -r requirements.txt -r requirements-dev.txt
+        rm -rf dist build *.egg-info
         python setup.py sdist bdist_wheel
-        tar -tzf dist/poja-0.1.2.tar.gz | grep poja-version.yml
         python -m twine upload dist/* -u __token__ -p ${{ secrets.TWINE_PASSWORD }}
