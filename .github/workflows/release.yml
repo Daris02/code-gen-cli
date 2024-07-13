@@ -1,6 +1,10 @@
 name: Release
 
 on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -69,5 +73,6 @@ jobs:
       if: ${{ steps.conventional-ch.outputs.skipped == 'false' }}
       run: |
         pip install -r requirements.txt -r requirements-dev.txt
+        rm -rf dist build *.egg-info
         python setup.py sdist bdist_wheel
         python -m twine upload dist/* -u __token__ -p ${{ secrets.TWINE_PASSWORD }}

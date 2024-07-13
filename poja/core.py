@@ -14,11 +14,11 @@ import os
 from poja.myos import cd_then_exec
 from pathlib import Path
 
-GIT_URL = "https://github.com/hei-school/poja"
+GIT_URL = "https://github.com/Daris02/code-gen"
 GIT_TAG_OR_COMMIT = "6d1233a"
 
-DEFAULT_GROUP_NAME = "school.hei"
-DEFAULT_PACKAGE_FULL_NAME = DEFAULT_GROUP_NAME + ".poja"
+DEFAULT_GROUP_NAME = "com.code"
+DEFAULT_PACKAGE_FULL_NAME = DEFAULT_GROUP_NAME + ".gen"
 
 
 def gen(

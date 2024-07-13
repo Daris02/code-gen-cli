@@ -11,15 +11,14 @@ with open("requirements.txt") as f:
     required = f.read().splitlines()
 
 setup(
-    name="poja",
+    name="dname-code-gen",
     version=get_version(),
     description="Serverless Postgres+Java hosted on Github+AWS",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
-    author="HEI",
-    author_email="contact@hei.school",
-    url="https://github.com/hei-school/poja-cli",
-    license="MIT",
+    author="Daris02",
+    author_email="hei.raymond.2@gmail.com",
+    url="https://github.com/Daris02/code-gen-cli",
     packages=find_packages(exclude=["tests*"]),
     install_requires=required,
 )
