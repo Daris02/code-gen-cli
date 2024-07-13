@@ -1,3 +1,12 @@
+# [13.1.0](https://github.com/Daris02/code-gen-cli/compare/v13.0.1...v13.1.0) (2024-07-13)
+
+
+### Features
+
+* add manifest to include version file ([1d9957e](https://github.com/Daris02/code-gen-cli/commit/1d9957e4c099079553cc7e73a6985ef4b7fa3aac))
+
+
+
 ## [13.0.1](https://github.com/Daris02/code-gen-cli/compare/v13.0.0...v13.0.1) (2024-07-13)
 
 
