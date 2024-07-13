@@ -1,3 +1,12 @@
+## [13.1.1](https://github.com/Daris02/code-gen-cli/compare/v13.1.0...v13.1.1) (2024-07-13)
+
+
+### Bug Fixes
+
+* get correct path version file ([e81fea1](https://github.com/Daris02/code-gen-cli/commit/e81fea1464048eb30244bac62f1efbe12a64548c))
+
+
+
 # [13.1.0](https://github.com/Daris02/code-gen-cli/compare/v13.0.1...v13.1.0) (2024-07-13)
 
 
