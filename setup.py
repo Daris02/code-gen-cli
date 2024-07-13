@@ -13,7 +13,7 @@ with open("requirements.txt") as f:
 setup(
     name="dname-code-gen",
     version=get_version(),
-    description="Serverless Postgres+Java hosted on Github+AWS",
+    description="Serverless Java(+Postgres or SQLite) hosted on Github+AWS",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Daris02",
