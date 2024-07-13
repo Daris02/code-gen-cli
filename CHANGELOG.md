@@ -1,3 +1,12 @@
+## [13.1.2](https://github.com/Daris02/code-gen-cli/compare/v13.1.1...v13.1.2) (2024-07-13)
+
+
+### Bug Fixes
+
+* update get_version ([5ca2697](https://github.com/Daris02/code-gen-cli/commit/5ca2697dff0a9e03bc8b9325a8f6d6c7c83bab24))
+
+
+
 ## [13.1.1](https://github.com/Daris02/code-gen-cli/compare/v13.1.0...v13.1.1) (2024-07-13)
 
 
