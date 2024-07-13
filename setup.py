@@ -21,4 +21,5 @@ setup(
     url="https://github.com/Daris02/code-gen-cli",
     packages=find_packages(exclude=["tests*"]),
     install_requires=required,
+    include_package_data=True,
 )
