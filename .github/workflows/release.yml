@@ -77,5 +77,6 @@ jobs:
       run: |
         pip install -r requirements.txt -r requirements-dev.txt
         rm -rf dist build *.egg-info
+        cp poja-version.yml poja/poja-version.yml
         python setup.py sdist bdist_wheel
         python -m twine upload dist/* -u __token__ -p ${{ secrets.TWINE_PASSWORD }}
