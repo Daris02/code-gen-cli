@@ -1,3 +1,12 @@
+## [13.1.4](https://github.com/Daris02/code-gen-cli/compare/v13.1.3...v13.1.4) (2024-07-13)
+
+
+### Bug Fixes
+
+* add version file to src code ([36ea28f](https://github.com/Daris02/code-gen-cli/commit/36ea28f91042f1bd7f578c1a8e7ee044a83d0171))
+
+
+
 ## [13.1.3](https://github.com/Daris02/code-gen-cli/compare/v13.1.2...v13.1.3) (2024-07-13)
 
 
